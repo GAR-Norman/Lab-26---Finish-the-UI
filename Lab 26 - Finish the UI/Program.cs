@@ -8,9 +8,13 @@ namespace Lab_26___Finish_the_UI
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+        /*
+ * Name: Gabriel Norman
+ * Date: August 4th, 2017
+ * Description: This is the initial version of the app, 
+ * set basic framework like text, size etc.
+ * Version: 0.1 -  
+ */
         [STAThread]
         static void Main()
         {
