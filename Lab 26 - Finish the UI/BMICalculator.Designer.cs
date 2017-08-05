@@ -61,6 +61,7 @@
             this.BMITable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.BMITable.Size = new System.Drawing.Size(299, 334);
             this.BMITable.TabIndex = 0;
+            this.BMITable.Paint += new System.Windows.Forms.PaintEventHandler(this.BMITable_Paint);
             // 
             // ImperialRadioButton
             // 

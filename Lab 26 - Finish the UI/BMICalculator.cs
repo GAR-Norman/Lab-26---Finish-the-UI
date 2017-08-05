@@ -31,5 +31,10 @@ namespace Lab_26___Finish_the_UI
         {
 
         }
+
+        private void BMITable_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
