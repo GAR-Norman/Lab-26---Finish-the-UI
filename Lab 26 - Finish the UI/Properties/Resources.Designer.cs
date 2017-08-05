@@ -63,9 +63,59 @@ namespace Lab_26___Finish_the_UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _240_F_135773765_5FUBf3zUi4nh2HEjjjdN75VUc8o7EY09 {
+            get {
+                object obj = ResourceManager.GetObject("240_F_135773765_5FUBf3zUi4nh2HEjjjdN75VUc8o7EY09", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _624871 {
             get {
                 object obj = ResourceManager.GetObject("624871", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap background_1273112_960_720 {
+            get {
+                object obj = ResourceManager.GetObject("background-1273112_960_720", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap giphy1 {
+            get {
+                object obj = ResourceManager.GetObject("giphy1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images__1_ {
+            get {
+                object obj = ResourceManager.GetObject("images (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wavy_blue_shapes_for_abstract_backgrounds_1035_7268 {
+            get {
+                object obj = ResourceManager.GetObject("wavy-blue-shapes-for-abstract-backgrounds_1035-7268", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

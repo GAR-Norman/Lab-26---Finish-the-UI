@@ -12,9 +12,8 @@ namespace Lab_26___Finish_the_UI
  * Name: Gabriel Norman
  * Date: August 4th, 2017
  * Student#300897331
- * Description: Added form fields (Radio buttons for metric and imperial, label and texboxes for 
- * weight and height).
- * Version: 0.2 -  
+ * Description: Changed background of multiline BMI display textbox and heigth and weight textbox
+ * Version: 0.4 -  
  */
         [STAThread]
         static void Main()

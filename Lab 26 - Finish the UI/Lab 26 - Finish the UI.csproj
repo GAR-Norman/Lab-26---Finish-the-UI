@@ -83,6 +83,21 @@
   <ItemGroup>
     <None Include="Resources\624871.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-1273112_960_720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wavy-blue-shapes-for-abstract-backgrounds_1035-7268.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_135773765_5FUBf3zUi4nh2HEjjjdN75VUc8o7EY09.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
