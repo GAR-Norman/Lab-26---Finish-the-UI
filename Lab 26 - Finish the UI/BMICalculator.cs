@@ -18,8 +18,7 @@ namespace Lab_26___Finish_the_UI
  * Student#: 300897331
  * Date: August 13th, 2017
  * Description: This is the Form Class
- * Version: 0.3 - Got a working version of the app. 
- * Simply need to work on results bar and reset button.
+ * Version: 0.4 - created results bar and reset button.
  */
 
 
@@ -109,11 +108,6 @@ namespace Lab_26___Finish_the_UI
 
         // Private Methods
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void ImperialRadioButtonClickChanged(object sender, EventArgs e)
         {
             this.MetricTrue = false;
@@ -134,6 +128,8 @@ namespace Lab_26___Finish_the_UI
 
         private void CalculateBMI(object sender, EventArgs e)
         {
+
+            BmiProgressBar.Value = 0;
             try
             {
                 this.HeightVal = Convert.ToDouble(MyHeightTextbox.Text);
@@ -171,10 +167,14 @@ namespace Lab_26___Finish_the_UI
 
         }
 
+
+
         private void ShowBMI()
         {
             if (BMIVal < 18.5 )
             {
+                this.ProgressBarTimer.Start(); 
+
                 ResultTextBox.Text = "";
                 ResultTextBox.Text = "UnderWeight";
                 BMIResultTextbox.Text = Convert.ToString(BMIVal);
@@ -182,6 +182,8 @@ namespace Lab_26___Finish_the_UI
 
           else if((BMIVal >= 18.5) && (BMIVal < 25))
             {
+                this.ProgressBarTimer.Start(); 
+
                 ResultTextBox.Text = "";
                 ResultTextBox.Text = "Normal";
                 BMIResultTextbox.Text = Convert.ToString(BMIVal);
@@ -189,6 +191,8 @@ namespace Lab_26___Finish_the_UI
 
            else if ((BMIVal >= 25) && (BMIVal < 30))
             {
+                this.ProgressBarTimer.Start();
+
                 ResultTextBox.Text = "";
                 ResultTextBox.Text = "OverWeight";
                 BMIResultTextbox.Text = Convert.ToString(BMIVal);
@@ -196,6 +200,9 @@ namespace Lab_26___Finish_the_UI
 
            else if (BMIVal >= 30)
             {
+                this.ProgressBarTimer.Start();
+                
+
                 ResultTextBox.Text = "";
                 ResultTextBox.Text = "Obese";
                 BMIResultTextbox.Text = Convert.ToString(BMIVal);
@@ -204,6 +211,35 @@ namespace Lab_26___Finish_the_UI
             }
         }
 
-        
+        private void ProgressBarTimer_Tick(object sender, EventArgs e)
+        {
+            if (BMIVal < 18.5)
+            {
+                this.BmiProgressBar.Increment(25);
+            }
+
+            else if ((BMIVal >= 18.5) && (BMIVal < 25))
+            {
+                this.BmiProgressBar.Increment(10);
+            }
+
+            else if ((BMIVal >= 25) && (BMIVal < 30))
+            {
+                this.BmiProgressBar.Increment(5);
+            }
+
+            else if (BMIVal >= 30)
+            {
+                this.BmiProgressBar.Increment(5);
+            }
+        }
+
+        private void ResetButton_Click(object sender, EventArgs e)
+        {
+            ResultTextBox.Text = "";
+            BmiProgressBar.Value = 0;
+            MyHeightTextbox.Text = "0";
+            WeightTextBox.Text = "0";
+        }
     }
 }
