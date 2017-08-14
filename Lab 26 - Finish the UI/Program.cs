@@ -9,13 +9,13 @@ namespace Lab_26___Finish_the_UI
     static class Program
     {
         /*
- * Name: Gabriel Norman 
- * Student#: 300897331
- * Date: August 13th, 2017
- * Description: This is the driver class
- * Version: 0.1 - This is the form class - created private instance variables, 
- * properties, basic methods and event handlers.
- */
+* Name: Gabriel Norman 
+* Student#: 300897331
+* Date: August 13th, 2017
+* Description: This is the Form Class
+* Version: 0.2 - Added a clear button and created method to show result text box value
+*/
+
         [STAThread]
         static void Main()
         {

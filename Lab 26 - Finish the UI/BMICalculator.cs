@@ -18,8 +18,7 @@ namespace Lab_26___Finish_the_UI
  * Student#: 300897331
  * Date: August 13th, 2017
  * Description: This is the Form Class
- * Version: 0.1 - This is the form class - created private instance variables, 
- * properties, basic methods and event handlers.
+ * Version: 0.2 - Added a clear button and created method to show result text box value
  */
 
 
@@ -137,14 +136,16 @@ namespace Lab_26___Finish_the_UI
             {
                 double multipliedWeight = Weight * 703;
                 double multipliedHeight = Height * Height;
-                BMIVal = multipliedWeight / multipliedHeight; 
+                BMIVal = multipliedWeight / multipliedHeight;
+                
             }
 
-            else if(this.MetricTrue == true)
+            if(this.MetricTrue == true)
             {
                 double multipliedWeight = Weight * 703;
                 double multipliedHeight = Height * Height;
                 BMIVal = multipliedWeight / multipliedHeight;
+               
             }
 
             ShowBMI();
