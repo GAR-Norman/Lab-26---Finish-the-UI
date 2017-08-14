@@ -39,7 +39,7 @@
             this.SplashFormTitle.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.SplashFormTitle.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SplashFormTitle.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.SplashFormTitle.Location = new System.Drawing.Point(32, 89);
+            this.SplashFormTitle.Location = new System.Drawing.Point(41, 89);
             this.SplashFormTitle.Name = "SplashFormTitle";
             this.SplashFormTitle.Size = new System.Drawing.Size(231, 126);
             this.SplashFormTitle.TabIndex = 0;
@@ -54,10 +54,9 @@
             // 
             // SplashForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Lab_26___Finish_the_UI.Properties.Resources._624871;
-            this.ClientSize = new System.Drawing.Size(302, 433);
+            this.ClientSize = new System.Drawing.Size(320, 480);
             this.Controls.Add(this.SplashFormTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashForm";
