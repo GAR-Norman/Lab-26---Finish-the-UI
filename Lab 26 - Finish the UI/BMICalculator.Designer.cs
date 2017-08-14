@@ -81,32 +81,30 @@
             // ImperialRadioButton
             // 
             this.ImperialRadioButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.ImperialRadioButton.AutoSize = true;
             this.ImperialRadioButton.BackColor = System.Drawing.Color.Transparent;
-            this.ImperialRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImperialRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ImperialRadioButton.ForeColor = System.Drawing.Color.DarkRed;
-            this.ImperialRadioButton.Location = new System.Drawing.Point(153, 15);
+            this.ImperialRadioButton.Location = new System.Drawing.Point(153, 12);
             this.ImperialRadioButton.Name = "ImperialRadioButton";
-            this.ImperialRadioButton.Size = new System.Drawing.Size(129, 33);
+            this.ImperialRadioButton.Size = new System.Drawing.Size(137, 39);
             this.ImperialRadioButton.TabIndex = 0;
             this.ImperialRadioButton.TabStop = true;
-            this.ImperialRadioButton.Text = "Imperial";
+            this.ImperialRadioButton.Text = "Imperial(inch, lbs)";
             this.ImperialRadioButton.UseVisualStyleBackColor = false;
             this.ImperialRadioButton.CheckedChanged += new System.EventHandler(this.ImperialRadioButtonClickChanged);
             // 
             // MetricButton
             // 
             this.MetricButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.MetricButton.AutoSize = true;
             this.MetricButton.BackColor = System.Drawing.Color.Transparent;
-            this.MetricButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MetricButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MetricButton.ForeColor = System.Drawing.Color.DarkRed;
-            this.MetricButton.Location = new System.Drawing.Point(4, 13);
+            this.MetricButton.Location = new System.Drawing.Point(4, 9);
             this.MetricButton.Name = "MetricButton";
-            this.MetricButton.Size = new System.Drawing.Size(119, 36);
+            this.MetricButton.Size = new System.Drawing.Size(119, 45);
             this.MetricButton.TabIndex = 1;
             this.MetricButton.TabStop = true;
-            this.MetricButton.Text = "Metric";
+            this.MetricButton.Text = "Metric(Kgs, Meters)";
             this.MetricButton.UseVisualStyleBackColor = false;
             this.MetricButton.CheckedChanged += new System.EventHandler(this.MetricButton_CheckedChanged);
             // 
