@@ -14,12 +14,12 @@ namespace Lab_26___Finish_the_UI
     {
 
         /*
- * Name: Gabriel Norman 
- * Student#: 300897331
- * Date: August 13th, 2017
- * Description: This is the Form Class
- * Version: 0.4 - created results bar and reset button.
- */
+* Name: Gabriel Norman 
+* Student#: 300897331
+* Date: August 13th, 2017
+* Description: This is the Form Class
+* Version: 0.5 built splash form and completed project
+*/
 
 
         //Private Instance Variables
@@ -213,8 +213,15 @@ namespace Lab_26___Finish_the_UI
 
         private void ProgressBarTimer_Tick(object sender, EventArgs e)
         {
-            if (BMIVal < 18.5)
+
+            if (BMIResultTextbox.Text == "")
             {
+                this.BmiProgressBar.Increment(0);
+            }
+
+            else if (BMIVal < 18.5)
+            { 
+
                 this.BmiProgressBar.Increment(25);
             }
 
@@ -231,11 +238,14 @@ namespace Lab_26___Finish_the_UI
             else if (BMIVal >= 30)
             {
                 this.BmiProgressBar.Increment(5);
-            }
+            }  
+
+            
         }
 
         private void ResetButton_Click(object sender, EventArgs e)
         {
+            BMIResultTextbox.Text = "";
             ResultTextBox.Text = "";
             BmiProgressBar.Value = 0;
             MyHeightTextbox.Text = "0";

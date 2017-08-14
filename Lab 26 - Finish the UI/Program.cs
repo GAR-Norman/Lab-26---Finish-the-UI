@@ -13,15 +13,17 @@ namespace Lab_26___Finish_the_UI
  * Student#: 300897331
  * Date: August 13th, 2017
  * Description: This is the Form Class
- * Version: 0.3 - Got a working version of the app. 
- * Simply need to work on results bar and reset button.
+ * Version: 0.5 built splash form and completed project
  */
+        public static BMI bmi; 
 
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            bmi = new BMI();
+            Application.Run(new SplashForm());
             Application.Run(new BMI());
         }
     }
