@@ -18,7 +18,8 @@ namespace Lab_26___Finish_the_UI
  * Student#: 300897331
  * Date: August 13th, 2017
  * Description: This is the Form Class
- * Version: 0.2 - Added a clear button and created method to show result text box value
+ * Version: 0.3 - Got a working version of the app. 
+ * Simply need to work on results bar and reset button.
  */
 
 
@@ -102,9 +103,11 @@ namespace Lab_26___Finish_the_UI
         public BMI()
         {
             InitializeComponent();
-            this.HeightVal = Convert.ToDouble(MyHeightTextbox.Text);
-            this.Weight = Convert.ToDouble(WeightTextBox.Text);
+            
         }
+
+
+        // Private Methods
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -131,22 +134,38 @@ namespace Lab_26___Finish_the_UI
 
         private void CalculateBMI(object sender, EventArgs e)
         {
-
-            if(this.ImperialTrue == true)
+            try
             {
-                double multipliedWeight = Weight * 703;
-                double multipliedHeight = Height * Height;
-                BMIVal = multipliedWeight / multipliedHeight;
+                this.HeightVal = Convert.ToDouble(MyHeightTextbox.Text);
+                this.Weight = Convert.ToDouble(WeightTextBox.Text);
+            }
+            catch 
+            {
+
+                this.HeightVal = 0;
+                this.Weight = 0;
+                ResultTextBox.Text = "Only use numbers!";
+            }
                 
-            }
 
-            if(this.MetricTrue == true)
+            
+
+            if (this.ImperialTrue == true)
             {
                 double multipliedWeight = Weight * 703;
-                double multipliedHeight = Height * Height;
-                BMIVal = multipliedWeight / multipliedHeight;
-               
+                double multipliedHeight = HeightVal * HeightVal;
+                this.BMIVal = multipliedWeight / multipliedHeight;
+
+
             }
+
+            else if(this.MetricTrue == true)
+            {
+                double multipliedWeight = Weight;
+                double multipliedHeight = HeightVal * HeightVal;
+                this.BMIVal = multipliedWeight / multipliedHeight;
+
+            } 
 
             ShowBMI();
 
@@ -156,23 +175,35 @@ namespace Lab_26___Finish_the_UI
         {
             if (BMIVal < 18.5 )
             {
+                ResultTextBox.Text = "";
                 ResultTextBox.Text = "UnderWeight";
+                BMIResultTextbox.Text = Convert.ToString(BMIVal);
             } 
 
-           else if((BMIVal >= 18.5) && (BMIVal < 25))
+          else if((BMIVal >= 18.5) && (BMIVal < 25))
             {
+                ResultTextBox.Text = "";
                 ResultTextBox.Text = "Normal";
+                BMIResultTextbox.Text = Convert.ToString(BMIVal);
             }
 
-            else if ((BMIVal >= 25) && (BMIVal < 30))
+           else if ((BMIVal >= 25) && (BMIVal < 30))
             {
+                ResultTextBox.Text = "";
                 ResultTextBox.Text = "OverWeight";
+                BMIResultTextbox.Text = Convert.ToString(BMIVal);
             }
 
-            else if (BMIVal <= 30)
+           else if (BMIVal >= 30)
             {
+                ResultTextBox.Text = "";
                 ResultTextBox.Text = "Obese";
+                BMIResultTextbox.Text = Convert.ToString(BMIVal);
+
+
             }
         }
+
+        
     }
 }

@@ -9,12 +9,13 @@ namespace Lab_26___Finish_the_UI
     static class Program
     {
         /*
-* Name: Gabriel Norman 
-* Student#: 300897331
-* Date: August 13th, 2017
-* Description: This is the Form Class
-* Version: 0.2 - Added a clear button and created method to show result text box value
-*/
+ * Name: Gabriel Norman 
+ * Student#: 300897331
+ * Date: August 13th, 2017
+ * Description: This is the Form Class
+ * Version: 0.3 - Got a working version of the app. 
+ * Simply need to work on results bar and reset button.
+ */
 
         [STAThread]
         static void Main()
