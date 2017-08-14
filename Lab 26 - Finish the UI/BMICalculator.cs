@@ -245,21 +245,26 @@ namespace Lab_26___Finish_the_UI
             { 
 
                 this.BmiProgressBar.Increment(25);
+                this.BmiProgressBar.Value = 15;
+
             }
 
             else if ((BMIVal >= 18.5) && (BMIVal < 25))
             {
                 this.BmiProgressBar.Increment(10);
+                this.BmiProgressBar.Value = 45;
             }
 
             else if ((BMIVal >= 25) && (BMIVal < 30))
             {
                 this.BmiProgressBar.Increment(5);
+                this.BmiProgressBar.Value = 70;
             }
 
             else if (BMIVal >= 30)
             {
                 this.BmiProgressBar.Increment(5);
+                this.BmiProgressBar.Value = 100;
             }  
 
             

@@ -84,9 +84,9 @@
             this.ImperialRadioButton.BackColor = System.Drawing.Color.Transparent;
             this.ImperialRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ImperialRadioButton.ForeColor = System.Drawing.Color.DarkRed;
-            this.ImperialRadioButton.Location = new System.Drawing.Point(153, 12);
+            this.ImperialRadioButton.Location = new System.Drawing.Point(153, 4);
             this.ImperialRadioButton.Name = "ImperialRadioButton";
-            this.ImperialRadioButton.Size = new System.Drawing.Size(137, 39);
+            this.ImperialRadioButton.Size = new System.Drawing.Size(142, 55);
             this.ImperialRadioButton.TabIndex = 0;
             this.ImperialRadioButton.TabStop = true;
             this.ImperialRadioButton.Text = "Imperial(inch, lbs)";
