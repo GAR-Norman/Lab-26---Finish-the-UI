@@ -37,7 +37,7 @@
             this.MyHeightTextbox = new System.Windows.Forms.TextBox();
             this.ButtonLabel = new System.Windows.Forms.Label();
             this.CalculateButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ResultTextBox = new System.Windows.Forms.TextBox();
             this.BMITable.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +67,6 @@
             this.BMITable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.BMITable.Size = new System.Drawing.Size(299, 334);
             this.BMITable.TabIndex = 0;
-            this.BMITable.Paint += new System.Windows.Forms.PaintEventHandler(this.BMITable_Paint);
             // 
             // ImperialRadioButton
             // 
@@ -83,7 +82,7 @@
             this.ImperialRadioButton.TabStop = true;
             this.ImperialRadioButton.Text = "Imperial";
             this.ImperialRadioButton.UseVisualStyleBackColor = false;
-            this.ImperialRadioButton.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.ImperialRadioButton.CheckedChanged += new System.EventHandler(this.ImperialRadioButtonClickChanged);
             // 
             // MetricButton
             // 
@@ -99,6 +98,7 @@
             this.MetricButton.TabStop = true;
             this.MetricButton.Text = "Metric";
             this.MetricButton.UseVisualStyleBackColor = false;
+            this.MetricButton.CheckedChanged += new System.EventHandler(this.MetricButton_CheckedChanged);
             // 
             // label1
             // 
@@ -136,7 +136,6 @@
             this.label2.Size = new System.Drawing.Size(104, 64);
             this.label2.TabIndex = 3;
             this.label2.Text = "My Height";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // MyHeightTextbox
             // 
@@ -173,17 +172,17 @@
             this.CalculateButton.Text = "Click to Calculate";
             this.CalculateButton.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // ResultTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Enabled = false;
-            this.textBox1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.textBox1.Location = new System.Drawing.Point(12, 369);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(278, 43);
-            this.textBox1.TabIndex = 6;
+            this.ResultTextBox.BackColor = System.Drawing.Color.White;
+            this.ResultTextBox.Enabled = false;
+            this.ResultTextBox.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.ResultTextBox.Location = new System.Drawing.Point(12, 369);
+            this.ResultTextBox.Multiline = true;
+            this.ResultTextBox.Name = "ResultTextBox";
+            this.ResultTextBox.ReadOnly = true;
+            this.ResultTextBox.Size = new System.Drawing.Size(278, 43);
+            this.ResultTextBox.TabIndex = 6;
             // 
             // BMI
             // 
@@ -193,7 +192,7 @@
             this.BackgroundImage = global::Lab_26___Finish_the_UI.Properties.Resources._240_F_135773765_5FUBf3zUi4nh2HEjjjdN75VUc8o7EY09;
             this.ClientSize = new System.Drawing.Size(302, 433);
             this.Controls.Add(this.BMITable);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ResultTextBox);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(7);
@@ -219,7 +218,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox MyHeightTextbox;
         private System.Windows.Forms.Label ButtonLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ResultTextBox;
         private System.Windows.Forms.Button CalculateButton;
     }
 }

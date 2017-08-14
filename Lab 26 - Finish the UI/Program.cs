@@ -9,11 +9,12 @@ namespace Lab_26___Finish_the_UI
     static class Program
     {
         /*
- * Name: Gabriel Norman
- * Date: August 4th, 2017
- * Student#300897331
- * Description: Changed background of multiline BMI display textbox and heigth and weight textbox
- * Version: 0.4 -  
+ * Name: Gabriel Norman 
+ * Student#: 300897331
+ * Date: August 13th, 2017
+ * Description: This is the driver class
+ * Version: 0.1 - This is the form class - created private instance variables, 
+ * properties, basic methods and event handlers.
  */
         [STAThread]
         static void Main()
