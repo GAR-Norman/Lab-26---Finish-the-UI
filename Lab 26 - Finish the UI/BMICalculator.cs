@@ -108,6 +108,12 @@ namespace Lab_26___Finish_the_UI
 
         // Private Methods
 
+
+        /// <summary>
+        /// Checks to see which radio button selected alters bool fields accordingly
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ImperialRadioButtonClickChanged(object sender, EventArgs e)
         {
             this.MetricTrue = false;
@@ -115,7 +121,11 @@ namespace Lab_26___Finish_the_UI
             
         }
 
-
+        /// <summary>
+        /// Checks to see which radio button selected alters bool fields accordingly
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MetricButton_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -126,6 +136,11 @@ namespace Lab_26___Finish_the_UI
         }
 
 
+        /// <summary>
+        /// Calculates BMI value, converts text to double datatype and resets the progress bar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CalculateBMI(object sender, EventArgs e)
         {
 
@@ -168,7 +183,9 @@ namespace Lab_26___Finish_the_UI
         }
 
 
-
+        /// <summary>
+        /// Initiates progress bar timer and displays approprite values in textboxes
+        /// </summary>
         private void ShowBMI()
         {
             if (BMIVal < 18.5 )
@@ -211,6 +228,11 @@ namespace Lab_26___Finish_the_UI
             }
         }
 
+        /// <summary>
+        /// Starts Progress Bar timer ticker and loads or clears progress bar accordingly
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProgressBarTimer_Tick(object sender, EventArgs e)
         {
 
@@ -243,6 +265,11 @@ namespace Lab_26___Finish_the_UI
             
         }
 
+        /// <summary>
+        /// Resets all form Values
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ResetButton_Click(object sender, EventArgs e)
         {
             BMIResultTextbox.Text = "";
