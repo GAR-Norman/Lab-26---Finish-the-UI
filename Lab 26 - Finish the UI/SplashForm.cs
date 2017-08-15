@@ -18,7 +18,7 @@ namespace Lab_26___Finish_the_UI
 * Student#: 300897331
 * Date: August 13th, 2017
 * Description: This is the SplashForm Class
-*  Version: 0.6 Fixed the clear form method to reset radio buttons
+*  Version: 0.7 Added closing event for form
 */
         public SplashForm()
         {

@@ -18,7 +18,7 @@ namespace Lab_26___Finish_the_UI
 * Student#: 300897331
 * Date: August 14th, 2017
 * Description: This is the Form Class
-* Version: 0.6 Fixed the clear form method to reset radio buttons
+* Version: 0.7 Added closing event for form
 */
 
 
@@ -288,6 +288,12 @@ namespace Lab_26___Finish_the_UI
             ImperialRadioButton.Checked = true;
 
 
+        } 
+
+        //Kills the application upon form closing event
+        private void BMI_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
