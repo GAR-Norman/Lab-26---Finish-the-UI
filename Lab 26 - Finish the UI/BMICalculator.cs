@@ -16,9 +16,9 @@ namespace Lab_26___Finish_the_UI
         /*
 * Name: Gabriel Norman 
 * Student#: 300897331
-* Date: August 13th, 2017
+* Date: August 14th, 2017
 * Description: This is the Form Class
-* Version: 0.5 built splash form and completed project
+* Version: 0.6 Fixed the clear form method to reset radio buttons
 */
 
 
@@ -271,17 +271,23 @@ namespace Lab_26___Finish_the_UI
         }
 
         /// <summary>
-        /// Resets all form Values
+        /// Resets all form Values To Default
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void ResetButton_Click(object sender, EventArgs e)
         {
+
+
             BMIResultTextbox.Text = "";
             ResultTextBox.Text = "";
             BmiProgressBar.Value = 0;
             MyHeightTextbox.Text = "0";
             WeightTextBox.Text = "0";
+            MetricButton.Checked = false;
+            ImperialRadioButton.Checked = true;
+
+
         }
     }
 }

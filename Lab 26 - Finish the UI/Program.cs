@@ -13,7 +13,7 @@ namespace Lab_26___Finish_the_UI
  * Student#: 300897331
  * Date: August 13th, 2017
  * Description: This is the Form Class
- * Version: 0.5 built splash form and completed project
+ *  Version: 0.6 Fixed the clear form method to reset radio buttons
  */
         public static BMI bmi; 
 
